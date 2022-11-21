@@ -1,0 +1,5 @@
+
+db.createCollection( 'productes', {validator: {$jsonSchema: {bsonType: 'object',title:'productes',required: [         'comanda'],properties: {pizzes: {bsonType: 'array',items: {
+title:'object',properties: {nom: {bsonType: 'string'},descripcio: {bsonType: 'string'},imatge: {bsonType: 'string'},preu: {bsonType: 'double'},categories: {bsonType: 'array',items: {bsonType: 'string'}}}}},begudes: {bsonType: 'array',items: {
+title:'object',properties: {nom: {bsonType: 'string'},descripcio: {bsonType: 'string'},imatge: {bsonType: 'string'},preu: {bsonType: 'double'}}}},hamburgueses: {bsonType: 'array',items: {
+title:'object',properties: {nom: {bsonType: 'string'},descripcio: {bsonType: 'string'},imatge: {bsonType: 'string'},preu: {bsonType: 'double'}}}},comanda: {bsonType: 'objectId'}}         }      }});  

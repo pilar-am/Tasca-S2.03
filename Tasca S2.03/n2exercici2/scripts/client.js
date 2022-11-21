@@ -1,0 +1,2 @@
+
+db.createCollection( 'client', {validator: {$jsonSchema: {bsonType: 'object',title:'client',required: [         'comanda',          'provincia'],properties: {nom: {bsonType: 'string'},cognoms: {bsonType: 'string'},direccio: {bsonType: 'string'},CP: {bsonType: 'int'},telefon: {bsonType: 'int'},id_localitat: {bsonType: 'objectId'},comandes: {bsonType: 'array',items: {bsonType: 'string'}},comanda: {bsonType: 'objectId'},provincia: {bsonType: 'objectId'}}         }      }});  

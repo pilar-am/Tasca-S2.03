@@ -1,0 +1,2 @@
+
+db.createCollection( 'ullera', {validator: {$jsonSchema: {bsonType: 'object',title:'ullera',required: [         'proveidor',          'venda'],properties: {marca: {bsonType: 'string'},grad_vid_es: {bsonType: 'double'},grad_vid_dre: {bsonType: 'double'},tipus_muntura: {bsonType: 'array',items: {bsonType: 'string'}},color_muntura: {bsonType: 'string'},color_vid_es: {bsonType: 'string'},color_vid_dre: {bsonType: 'string'},preu: {bsonType: 'double'},proveidor: {bsonType: 'objectId'},venda: {bsonType: 'objectId'}}         }      }});  

@@ -1,0 +1,4 @@
+
+db.createCollection( 'client', {validator: {$jsonSchema: {bsonType: 'object',title:'client',required: [         'ullera'],properties: {nom: {bsonType: 'string'},adreça: {bsonType: 'object',
+title:'object',properties: {carrer: {bsonType: 'string'},num: {bsonType: 'int'},ciutat: {bsonType: 'string'},CP: {bsonType: 'int'},pais: {bsonType: 'int'}}},telefon: {bsonType: 'string'},email: {bsonType: 'string'},data_registre: {bsonType: 'date'},recomanacio: {bsonType: 'string'},factura: {bsonType: 'array',items: {
+title:'object',properties: {id_factura: {bsonType: 'string'},data_factura: {bsonType: 'date'},id_ullera: {bsonType: 'string'}}}},ullera: {bsonType: 'objectId'}}         }      }});  

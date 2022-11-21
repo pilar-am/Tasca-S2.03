@@ -1,0 +1,2 @@
+
+db.createCollection( 'provincia', {validator: {$jsonSchema: {bsonType: 'object',title:'provincia',properties: {nom: {bsonType: 'string'},localitats: {bsonType: 'array',items: {bsonType: 'string'}}}         }      }});  
